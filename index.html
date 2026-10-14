@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Vantaria Pvt. Ltd. — A Diversified Enterprise Group</title>
+  <meta name="description" content="Vantaria Pvt. Ltd. is a privately held enterprise group headquartered in New Delhi, with houses in fine confectionery, premium personal care, global trade and digital commerce." />
+  <meta name="keywords" content="Vantaria, Vantaria Pvt Ltd, confectionery, chocolate manufacturing, personal care, perfumery, global trade, import export, digital commerce, New Delhi" />
+  <meta name="author" content="Vantaria Pvt. Ltd." />
+  <meta name="theme-color" content="#0b0b0c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vantaria Pvt. Ltd. — A Diversified Enterprise Group" />
+  <meta property="og:description" content="Fine confectionery, premium personal care, global trade and digital commerce. Headquartered in New Delhi." />
+  <meta property="og:image" content="images/og-vantaria.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        if (sessionStorage.getItem('vtCoverSeen') || window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('seen');
+        sessionStorage.setItem('vtCoverSeen', '1');
+      } catch (e) { d.classList.add('seen'); }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ==================== OPENING COVER ==================== -->
+  <div class="cover" id="cover" aria-hidden="true">
+    <div class="cover-inner">
+      <svg class="cover-crest" viewBox="0 0 120 120" fill="none">
+        <circle class="draw" cx="60" cy="60" r="57" stroke="#C9B27C" stroke-width="1.2" pathLength="1"/>
+        <circle class="draw d2" cx="60" cy="60" r="52.5" stroke="#C9B27C" stroke-width="0.6" pathLength="1"/>
+        <path class="draw d3 fillin" d="M33 36 L44.5 36 L62.2 81.2 L85 36 L87.6 36 L60.9 93 L58.2 93 Z" stroke="#C9B27C" stroke-width="0.8" pathLength="1"/>
+        <rect class="fade" x="27" y="35" width="23.5" height="1.5" fill="#C9B27C"/>
+        <rect class="fade" x="80" y="35" width="13" height="1.5" fill="#C9B27C"/>
+        <path class="fade" d="M60 19.5 L63.5 23 L60 26.5 L56.5 23 Z" fill="#C9B27C"/>
+      </svg>
+      <p class="cover-word"><span>V</span><span>a</span><span>n</span><span>t</span><span>a</span><span>r</span><span>i</span><span>a</span></p>
+      <p class="cover-tag">A Diversified Enterprise Group</p>
+    </div>
+  </div>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-label" id="cursorLabel"></span></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- ==================== HEADER + MEGA MENUS ==================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Vantaria Pvt. Ltd. — back to top">
+        <img src="images/vantaria-mark.svg" alt="" width="44" height="44" />
+        <span class="brand-text">
+          <span class="brand-word">Vantaria</span>
+          <span class="brand-sub">Pvt. Ltd.</span>
+        </span>
+      </a>
+
+      <nav class="nav nav--main" aria-label="Primary">
+        <button class="nav-btn" type="button" aria-expanded="false" aria-controls="mm-group">The Group</button>
+        <button class="nav-btn" type="button" aria-expanded="false" aria-controls="mm-houses">Houses</button>
+        <button class="nav-btn" type="button" aria-expanded="false" aria-controls="mm-platform">Platform</button>
+        <a class="nav-link" href="#reach">Global Reach</a>
+        <a class="nav-link" href="#corporate">Corporate</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="nav-cta" href="#enquiries" data-magnetic>Enquiries</a>
+        <a class="enquire-mobile" href="#enquiries">Enquire</a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuOverlay">
+          <span class="menu-label">Menu</span>
+          <span class="menu-lines" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- The Group -->
+    <div class="mega" id="mm-group" hidden>
+      <div class="mega-inner">
+        <div class="mega-intro">
+          <p class="label">The Group</p>
+          <p class="mega-title">Enterprise, <em>held to a higher standard.</em></p>
+          <p>A privately held enterprise group, headquartered in New Delhi.</p>
+        </div>
+        <ul class="mega-links">
+          <li><a href="#group">About Vantaria</a></li>
+          <li><a href="#group">Our Principles</a></li>
+          <li><a href="#houses">Our Houses</a></li>
+          <li><a href="#corporate">Corporate Information</a></li>
+          <li><a href="#enquiries">Private Enquiries</a></li>
+        </ul>
+        <a class="mega-feature" href="#group">
+          <img src="images/band-atelier.jpg" alt="" loading="lazy" />
+          <span><span class="label">The Vantaria Standard</span><span class="mega-feature-title">We measure our work in decades.</span></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Houses -->
+    <div class="mega" id="mm-houses" hidden>
+      <div class="mega-inner">
+        <div class="mega-intro">
+          <p class="label">Our Houses</p>
+          <p class="mega-title">Four houses. <em>One standard.</em></p>
+          <p>Select a house to open its story.</p>
+        </div>
+        <ul class="mega-houses" id="megaHouses">
+          <li><a href="#houses" data-story="0" data-preview="images/house-confectionery.jpg"><span class="mh-code">NIC 10732 · 47219</span><span class="mh-name">Confectionery</span></a></li>
+          <li><a href="#houses" data-story="1" data-preview="images/house-personal-care.jpg"><span class="mh-code">NIC 46491</span><span class="mh-name">Personal Care</span></a></li>
+          <li><a href="#houses" data-story="2" data-preview="images/house-trade.jpg"><span class="mh-code">Import · Export</span><span class="mh-name">Global Trade</span></a></li>
+          <li><a href="#houses" data-story="3" data-preview="images/house-digital.jpg"><span class="mh-code">Omnichannel</span><span class="mh-name">Digital Commerce</span></a></li>
+        </ul>
+        <figure class="mega-preview">
+          <img id="megaPreview" src="images/house-confectionery.jpg" alt="" loading="lazy" />
+        </figure>
+      </div>
+    </div>
+
+    <!-- Platform -->
+    <div class="mega" id="mm-platform" hidden>
+      <div class="mega-inner">
+        <div class="mega-intro">
+          <p class="label">The Platform</p>
+          <p class="mega-title">Vertically integrated, <em>end to end.</em></p>
+          <p>From the production floor to the customer's door.</p>
+        </div>
+        <ul class="mega-pillars">
+          <li><a href="#platform"><span class="label">Make</span>Manufacturing &amp; Processing</a></li>
+          <li><a href="#platform"><span class="label">Move</span>Logistics &amp; Warehousing</a></li>
+          <li><a href="#platform"><span class="label">Assure</span>Research &amp; Quality</a></li>
+          <li><a href="#platform"><span class="label">Protect</span>Intellectual Property &amp; Brands</a></li>
+        </ul>
+        <dl class="mega-figures">
+          <div><dt>Industry verticals</dt><dd>3+</dd></div>
+          <div><dt>Product lines</dt><dd>50+</dd></div>
+          <div><dt>Trade corridors</dt><dd>10+</dd></div>
+        </dl>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-screen menu (tablet & phone) -->
+  <div class="menu-overlay" id="menuOverlay" hidden>
+    <nav class="menu-links" aria-label="Menu">
+      <a href="#group">The Group</a>
+      <a href="#houses">Our Houses</a>
+      <a href="#platform">The Platform</a>
+      <a href="#reach">Global Reach</a>
+      <a href="#corporate">Corporate Information</a>
+      <a href="#enquiries">Private Enquiries</a>
+    </nav>
+    <div class="menu-contact">
+      <p class="label">Corporate Office</p>
+      <p>House No. 347, Main Gali, Shahzada Bagh Phase 1,<br />Inderlok, New Delhi 110035</p>
+      <p><a href="tel:+919721830179">+91 97218 30179</a><br /><a href="mailto:vantariapvtltd@gmail.com">vantariapvtltd@gmail.com</a></p>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <canvas class="hero-silk" id="silk" aria-hidden="true"></canvas>
+      <div class="container hero-inner">
+        <p class="label hero-eyebrow intro" style="--i:0">Vantaria Pvt. Ltd. <span class="dot" aria-hidden="true"></span> New Delhi</p>
+        <h1 class="hero-title" id="heroTitle">
+          <span class="line"><span style="--i:1">Enterprise,</span></span>
+          <span class="line"><em style="--i:2">held to a higher</em></span>
+          <span class="line"><span style="--i:3">standard.</span></span>
+        </h1>
+        <p class="hero-rotator intro" style="--i:4">Setting the standard in <span class="rot"><span id="rotWord">fine confectionery</span><span class="caret" aria-hidden="true"></span></span></p>
+        <div class="hero-foot intro" style="--i:5">
+          <p class="hero-lede">A privately held enterprise group, building houses that endure.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-gold" href="#houses" data-magnetic>Discover the Group</a>
+            <a class="link-arrow" href="#enquiries" data-magnetic>Private enquiries
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M14 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="container intro" style="--i:6">
+        <div class="hero-rail">
+          <ul class="hero-houses" aria-label="Houses">
+            <li><a href="#houses" data-story="0">Confectionery</a></li>
+            <li><a href="#houses" data-story="1">Personal Care</a></li>
+            <li><a href="#houses" data-story="2">Global Trade</a></li>
+            <li><a href="#houses" data-story="3">Digital Commerce</a></li>
+          </ul>
+          <a class="scroll-cue" href="#group" aria-label="Scroll to The Group"><span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== THE GROUP ==================== -->
+    <section class="section group" id="group" aria-labelledby="groupTitle">
+      <div class="container group-grid">
+        <div class="group-side reveal">
+          <p class="label">The Group</p>
+          <img src="images/vantaria-mark.svg" alt="" width="72" height="72" class="group-mark" />
+        </div>
+        <div class="group-main">
+          <h2 class="statement" id="groupTitle" data-lit>Vantaria is a privately held enterprise group headquartered in New Delhi. We make, source and sell fine confectionery and premium personal care, and we build the supply chains and storefronts that carry them to market.</h2>
+          <div class="principles">
+            <article class="principle reveal">
+              <h3>Quality without compromise</h3>
+              <p>Every product is held to export-grade standards, from formulation and production to the final seal on the pack.</p>
+            </article>
+            <article class="principle reveal">
+              <h3>Partnerships that compound</h3>
+              <p>We grow alongside distributors, franchise partners and joint-venture partners who share a long view.</p>
+            </article>
+            <article class="principle reveal">
+              <h3>Integrated by design</h3>
+              <p>Manufacturing, trade and commerce sit under one roof, so quality never leaves our hands.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== OUR HOUSES (carousel) ==================== -->
+    <section class="section houses" id="houses" aria-labelledby="housesTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="label">Our Houses</p>
+            <h2 class="display" id="housesTitle">Four houses. <em>One standard.</em></h2>
+          </div>
+          <div class="head-side">
+            <p class="section-intro">Each house runs as a focused business, backed by the group's manufacturing, trade and distribution platform. Drag to explore, select to open.</p>
+            <div class="car-controls">
+              <button type="button" class="round-btn" id="storyPrev" aria-label="Previous house"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5M10 6l-6 6 6 6"/></svg></button>
+              <button type="button" class="round-btn" id="storyNext" aria-label="Next house"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M14 6l6 6-6 6"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="story-track" id="storyTrack" data-cursor="drag" aria-label="Houses carousel">
+        <button class="story" type="button" data-story="0" data-cursor="view">
+          <img src="images/house-confectionery.jpg" alt="" width="716" height="896" draggable="false" />
+          <span class="story-code">NIC 10732 · 47219</span>
+          <span class="story-body">
+            <span class="story-name">Confectionery</span>
+            <span class="story-sub">Chocolate, cocoa, pralines &amp; bakery</span>
+            <span class="story-open">Open the house <span class="plus" aria-hidden="true"></span></span>
+          </span>
+        </button>
+        <button class="story" type="button" data-story="1" data-cursor="view">
+          <img src="images/house-personal-care.jpg" alt="" width="716" height="896" draggable="false" />
+          <span class="story-code">NIC 46491</span>
+          <span class="story-body">
+            <span class="story-name">Personal Care</span>
+            <span class="story-sub">Fragrance, skincare, haircare &amp; grooming</span>
+            <span class="story-open">Open the house <span class="plus" aria-hidden="true"></span></span>
+          </span>
+        </button>
+        <button class="story" type="button" data-story="2" data-cursor="view">
+          <img src="images/house-trade.jpg" alt="" width="716" height="896" draggable="false" />
+          <span class="story-code">Import · Export</span>
+          <span class="story-body">
+            <span class="story-name">Global Trade</span>
+            <span class="story-sub">Sourcing, distributorships &amp; joint ventures</span>
+            <span class="story-open">Open the house <span class="plus" aria-hidden="true"></span></span>
+          </span>
+        </button>
+        <button class="story" type="button" data-story="3" data-cursor="view">
+          <img src="images/house-digital.jpg" alt="" width="716" height="896" draggable="false" />
+          <span class="story-code">Omnichannel</span>
+          <span class="story-body">
+            <span class="story-name">Digital Commerce</span>
+            <span class="story-sub">E-commerce, marketplaces &amp; omnichannel retail</span>
+            <span class="story-open">Open the house <span class="plus" aria-hidden="true"></span></span>
+          </span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="track-progress" aria-hidden="true"><span id="trackBar"></span></div>
+      </div>
+    </section>
+
+    <!-- ==================== QUOTE BAND ==================== -->
+    <section class="band" aria-label="The Vantaria standard">
+      <img class="band-img" src="images/band-atelier.jpg" alt="" loading="lazy" width="1600" height="700" />
+      <div class="container band-inner reveal">
+        <p class="band-quote">We measure our work <em>in decades.</em></p>
+        <p class="label">The Vantaria Standard</p>
+      </div>
+    </section>
+
+    <!-- ==================== PLATFORM (interactive tiles) ==================== -->
+    <section class="section platform" id="platform" aria-labelledby="platformTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="label">The Platform</p>
+            <h2 class="display" id="platformTitle">Vertically integrated, <em>from production floor to the customer's door.</em></h2>
+          </div>
+        </div>
+        <div class="mosaic">
+          <a class="tile tile--photo reveal" href="#enquiries" data-inquiry="supply">
+            <img src="images/tile-precision.jpg" alt="" loading="lazy" />
+            <span class="tile-verb">Make</span>
+            <span class="tile-title">Manufacturing &amp; Processing</span>
+            <span class="tile-desc">Production facilities with advanced machinery, R&amp;D laboratories and quality control at every stage.</span>
+            <span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M14 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="tile tile--emerald reveal" href="#enquiries" data-inquiry="domestic">
+            <svg class="tile-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 14h26v20H4z"/><path d="M30 20h8l6 7v7H30"/><circle cx="12" cy="36" r="4"/><circle cx="36" cy="36" r="4"/></svg>
+            <span class="tile-verb">Move</span>
+            <span class="tile-title">Logistics &amp; Warehousing</span>
+            <span class="tile-desc">Distribution centres and climate-controlled storage, located for fast domestic and international shipment.</span>
+            <span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M14 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="tile tile--photo reveal" href="#enquiries" data-inquiry="other">
+            <img src="images/tile-laboratory.jpg" alt="" loading="lazy" />
+            <span class="tile-verb">Assure</span>
+            <span class="tile-title">Research &amp; Quality</span>
+            <span class="tile-desc">Formulation laboratories and testing protocols that hold every batch to global standards.</span>
+            <span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M14 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="tile tile--gold reveal" href="#enquiries" data-inquiry="franchise">
+            <svg class="tile-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z"/><path d="M17 23l5 5 9-10"/></svg>
+            <span class="tile-verb">Protect</span>
+            <span class="tile-title">Intellectual Property &amp; Brands</span>
+            <span class="tile-desc">Trademarks, proprietary formulations and product designs, registered and managed across every house.</span>
+            <span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M14 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="tile tile--photo reveal" href="#enquiries" data-inquiry="supply">
+            <img src="images/tile-network.jpg" alt="" loading="lazy" />
+            <span class="tile-verb">Source</span>
+            <span class="tile-title">Global Sourcing</span>
+            <span class="tile-desc">High-grade raw ingredients, packaging materials and finished goods, sourced internationally through strategic partners.</span>
+            <span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M14 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="tile tile--onyx reveal" href="#enquiries" data-inquiry="domestic">
+            <svg class="tile-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 16h36l-3 24H9z"/><path d="M17 16v-4a7 7 0 0114 0v4"/></svg>
+            <span class="tile-verb">Sell</span>
+            <span class="tile-title">Omnichannel Distribution</span>
+            <span class="tile-desc">Wholesale, retail, supermarket and digital marketplace channels, at home and abroad.</span>
+            <span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M14 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="tile tile--photo reveal" href="#enquiries" data-inquiry="franchise">
+            <img src="images/house-personal-care.jpg" alt="" loading="lazy" />
+            <span class="tile-verb">Build</span>
+            <span class="tile-title">Turnkey Brand Development</span>
+            <span class="tile-desc">Brand development, repackaging and regulatory-compliant trade for domestic and international markets.</span>
+            <span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M14 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="tile tile--deep reveal" href="#enquiries" data-inquiry="jv">
+            <svg class="tile-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="18" cy="24" r="11"/><circle cx="30" cy="24" r="11"/></svg>
+            <span class="tile-verb">Partner</span>
+            <span class="tile-title">Joint Ventures &amp; Franchise</span>
+            <span class="tile-desc">Franchise frameworks, joint ventures and sourcing agreements across key global markets.</span>
+            <span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M14 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="tile tile--cta reveal" href="#enquiries">
+            <span class="tile-verb">Work with Vantaria</span>
+            <span class="tile-title tile-title--big">Begin a <em>conversation.</em></span>
+            <span class="tile-desc tile-desc--show">Distribution, trade, franchise and partnership enquiries.</span>
+            <span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M14 6l6 6-6 6"/></svg></span>
+          </a>
+        </div>
+        <dl class="figures reveal">
+          <div><dt>Industry verticals</dt><dd><span data-count="3">3</span><span class="plus-sign">+</span></dd></div>
+          <div><dt>Product lines</dt><dd><span data-count="50">50</span><span class="plus-sign">+</span></dd></div>
+          <div><dt>Trade corridors</dt><dd><span data-count="10">10</span><span class="plus-sign">+</span></dd></div>
+          <div><dt>Houses</dt><dd><span data-count="4">4</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ==================== GLOBAL REACH ==================== -->
+    <section class="section reach" id="reach" aria-labelledby="reachTitle">
+      <div class="container">
+        <div class="reach-grid">
+          <div class="reach-text">
+            <p class="label reveal">Global Reach</p>
+            <h2 class="display reveal" id="reachTitle">Trade corridors from New Delhi <em>to the world.</em></h2>
+            <p class="section-intro reveal">Vantaria is structured to enter international commercial arrangements, franchise frameworks, sourcing agreements and joint ventures across key global markets.</p>
+            <p class="globe-hint reveal"><span class="hint-icon" aria-hidden="true"></span>Drag the globe to turn it. Hover a point to see the region.</p>
+          </div>
+          <figure class="reach-globe" data-cursor="drag">
+            <canvas id="globe" aria-label="Globe showing trade routes from New Delhi to Europe, the Middle East, East Africa, Southeast Asia, Australia, East Asia and the Americas" role="img"></canvas>
+            <span class="globe-tip" id="globeTip" hidden></span>
+            <figcaption>
+              <span class="hq"><span class="hq-dot" aria-hidden="true"></span>New Delhi HQ</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="models" id="models">
+          <a class="model reveal" href="#enquiries" data-inquiry="franchise">
+            <span class="model-top"><span class="label">Model</span><span class="model-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span></span>
+            <span class="model-title">International Franchise Frameworks</span>
+            <span class="model-text">Structured franchise arrangements for Vantaria products and brands in new markets.</span>
+          </a>
+          <a class="model reveal" href="#enquiries" data-inquiry="export">
+            <span class="model-top"><span class="label">Model</span><span class="model-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span></span>
+            <span class="model-title">Cross-Border Distributorships</span>
+            <span class="model-text">Distributorships and agency networks across key international trade corridors.</span>
+          </a>
+          <a class="model reveal" href="#enquiries" data-inquiry="jv">
+            <span class="model-top"><span class="label">Model</span><span class="model-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span></span>
+            <span class="model-title">Joint Venture Partnerships</span>
+            <span class="model-text">Commercial joint ventures with shared R&amp;D capabilities and access to emerging consumer markets.</span>
+          </a>
+          <a class="model reveal" href="#enquiries" data-inquiry="supply">
+            <span class="model-top"><span class="label">Model</span><span class="model-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span></span>
+            <span class="model-title">Global Sourcing Agreements</span>
+            <span class="model-text">High-grade raw ingredients, packaging materials and finished goods, sourced internationally.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CORPORATE INFORMATION ==================== -->
+    <section class="section corporate" id="corporate" aria-labelledby="corpTitle">
+      <div class="container corporate-grid">
+        <div class="reveal">
+          <p class="label">Corporate Information</p>
+          <h2 class="display" id="corpTitle">Registered, <em>accountable,</em> on record.</h2>
+        </div>
+        <dl class="corp-list reveal">
+          <div><dt>Company</dt><dd>Vantaria Pvt. Ltd.</dd></div>
+          <div><dt>Corporate Identity Number</dt><dd class="mono">U10732DC2026PTC474947</dd></div>
+          <div><dt>GSTIN</dt><dd class="mono">07AAMCV6953A1Z5</dd></div>
+          <div><dt>Industry classification</dt><dd class="mono">NIC 10732 · 47219 · 46491</dd></div>
+          <div class="wide"><dt>Registered office</dt><dd>House No. 347, Main Gali, Shahzada Bagh Phase 1, Inderlok, New Delhi 110035, India</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ==================== ENQUIRIES (3 steps) ==================== -->
+    <section class="section enquiries" id="enquiries" aria-labelledby="enqTitle">
+      <div class="container enq-grid">
+        <div class="enq-side">
+          <p class="label reveal">Private Enquiries</p>
+          <h2 class="display reveal" id="enqTitle">Begin a <em>conversation.</em></h2>
+          <p class="section-intro reveal">For distribution, trade, franchise and partnership enquiries, write to our corporate office. We respond within 24 to 48 business hours.</p>
+          <div class="enq-contacts reveal">
+            <div>
+              <p class="label">Corporate Office</p>
+              <p>House No. 347, Main Gali, Shahzada Bagh Phase 1, Inderlok, New Delhi 110035</p>
+              <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=Shahzada+Bagh+Phase+1+Inderlok+New+Delhi+110035" target="_blank" rel="noopener">Open in Google Maps
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+            </div>
+            <div>
+              <p class="label">Telephone</p>
+              <p><a href="tel:+919721830179">+91 97218 30179</a></p>
+            </div>
+            <div>
+              <p class="label">Email</p>
+              <p><a href="mailto:vantariapvtltd@gmail.com">vantariapvtltd@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="enq-form-wrap reveal">
+          <ol class="steps" aria-label="Enquiry progress">
+            <li class="is-current" data-step-dot="1"><span>01</span>Enquiry</li>
+            <li data-step-dot="2"><span>02</span>Details</li>
+            <li data-step-dot="3"><span>03</span>Message</li>
+          </ol>
+          <div class="steps-bar" aria-hidden="true"><span id="stepsBar"></span></div>
+
+          <form class="enq-form" id="enquiryForm" novalidate>
+            <!-- Step 1 -->
+            <fieldset class="step" data-step="1">
+              <legend class="step-title">What would you like to discuss?</legend>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="inquiryType" value="domestic" /><span class="choice-box"><span class="choice-name">Domestic distribution</span><span class="choice-note">Wholesale, retail and supermarket partners</span></span></label>
+                <label class="choice"><input type="radio" name="inquiryType" value="export" /><span class="choice-box"><span class="choice-name">Import &amp; export trade</span><span class="choice-note">Cross-border supply and distributorships</span></span></label>
+                <label class="choice"><input type="radio" name="inquiryType" value="jv" /><span class="choice-box"><span class="choice-name">Joint venture</span><span class="choice-note">Commercial partnerships and shared capability</span></span></label>
+                <label class="choice"><input type="radio" name="inquiryType" value="franchise" /><span class="choice-box"><span class="choice-name">Franchise &amp; private label</span><span class="choice-note">Brand, dealership and repackaging</span></span></label>
+                <label class="choice"><input type="radio" name="inquiryType" value="supply" /><span class="choice-box"><span class="choice-name">Supply &amp; sourcing</span><span class="choice-note">Raw materials, packaging and finished goods</span></span></label>
+                <label class="choice"><input type="radio" name="inquiryType" value="other" /><span class="choice-box"><span class="choice-name">General enquiry</span><span class="choice-note">Anything else for the corporate office</span></span></label>
+              </div>
+              <p class="err" id="typeErr" hidden>Please choose the nature of your enquiry.</p>
+              <div class="step-actions">
+                <span></span>
+                <button class="btn btn-gold" type="button" data-next>Continue</button>
+              </div>
+            </fieldset>
+
+            <!-- Step 2 -->
+            <fieldset class="step" data-step="2" hidden>
+              <legend class="step-title">How can we reach you?</legend>
+              <div class="fields">
+                <div class="field"><label for="fullName">Full name <span class="req" aria-hidden="true">*</span></label><input id="fullName" name="fullName" type="text" autocomplete="name" required /></div>
+                <div class="field"><label for="companyName">Company</label><input id="companyName" name="companyName" type="text" autocomplete="organization" /></div>
+                <div class="field"><label for="email">Email <span class="req" aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required /></div>
+                <div class="field"><label for="phone">Telephone</label><input id="phone" name="phone" type="tel" autocomplete="tel" /></div>
+              </div>
+              <div class="step-actions">
+                <button class="link-arrow back" type="button" data-back><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5M10 6l-6 6 6 6"/></svg>Back</button>
+                <button class="btn btn-gold" type="button" data-next>Continue</button>
+              </div>
+            </fieldset>
+
+            <!-- Step 3 -->
+            <fieldset class="step" data-step="3" hidden>
+              <legend class="step-title">Tell us more.</legend>
+              <div class="field"><label for="message">Message <span class="req" aria-hidden="true">*</span></label><textarea id="message" name="message" rows="5" required></textarea></div>
+              <dl class="summary" id="summary"></dl>
+              <div class="step-actions">
+                <button class="link-arrow back" type="button" data-back><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5M10 6l-6 6 6 6"/></svg>Back</button>
+                <button class="btn btn-gold" type="submit">Send Enquiry</button>
+              </div>
+              <p class="form-note">Sending opens your email app with the enquiry addressed to our corporate office.</p>
+            </fieldset>
+          </form>
+
+          <div class="form-done" id="formDone" hidden tabindex="-1">
+            <p class="label">Enquiry prepared</p>
+            <h3>Your email is ready to send.</h3>
+            <p>Your email app should now be open with the enquiry filled in. Press Send there to reach our corporate office. If nothing opened, write to <strong>vantariapvtltd@gmail.com</strong> or call <strong>+91 97218 30179</strong>.</p>
+            <div class="form-done-actions">
+              <button class="btn btn-outline" type="button" id="copyEmail">Copy email address</button>
+              <button class="link-arrow" type="button" id="formReset">Start a new enquiry</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-word" aria-hidden="true">Vantaria</p>
+      <div class="footer-cols">
+        <div class="footer-brand">
+          <img src="images/vantaria-mark.svg" alt="" width="56" height="56" />
+          <p>A privately held enterprise group. Headquartered in New Delhi, India.</p>
+        </div>
+        <nav aria-label="Footer: group">
+          <p class="label">The Group</p>
+          <ul>
+            <li><a href="#group">About Vantaria</a></li>
+            <li><a href="#platform">The Platform</a></li>
+            <li><a href="#reach">Global Reach</a></li>
+            <li><a href="#corporate">Corporate Information</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer: houses">
+          <p class="label">Houses</p>
+          <ul>
+            <li><a href="#houses" data-story="0">Confectionery</a></li>
+            <li><a href="#houses" data-story="1">Personal Care</a></li>
+            <li><a href="#houses" data-story="2">Global Trade</a></li>
+            <li><a href="#houses" data-story="3">Digital Commerce</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="label">Contact</p>
+          <ul>
+            <li><a href="tel:+919721830179">+91 97218 30179</a></li>
+            <li><a href="mailto:vantariapvtltd@gmail.com">vantariapvtltd@gmail.com</a></li>
+            <li><a href="#enquiries">Private Enquiries</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <span>&copy; 2026 Vantaria Pvt. Ltd. All rights reserved.</span>
+        <span>CIN U10732DC2026PTC474947 <span class="sep" aria-hidden="true">·</span> GSTIN 07AAMCV6953A1Z5</span>
+        <a href="#top" class="to-top">Back to top
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5M6 11l6-6 6 6"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== HOUSE STORY POP-UP ==================== -->
+  <dialog class="story-dlg" id="storyDlg" aria-labelledby="sdTitle">
+    <div class="sd-grid">
+      <figure class="sd-media"><img id="sdImg" src="images/house-confectionery.jpg" alt="" /></figure>
+      <div class="sd-body">
+        <div class="sd-top">
+          <span class="label" id="sdCode"></span>
+          <button class="sd-close" type="button" id="sdClose" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+        </div>
+        <h2 class="sd-title" id="sdTitle"></h2>
+        <div class="sd-text" id="sdText"></div>
+        <dl class="sd-facts" id="sdFacts"></dl>
+        <div class="sd-actions">
+          <a class="btn btn-gold" href="#enquiries" id="sdCta">Enquire</a>
+        </div>
+        <div class="sd-nav">
+          <button type="button" class="sd-step" id="sdPrev"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5M10 6l-6 6 6 6"/></svg><span id="sdPrevName"></span></button>
+          <span class="sd-count" id="sdCount"></span>
+          <button type="button" class="sd-step" id="sdNext"><span id="sdNextName"></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M14 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
